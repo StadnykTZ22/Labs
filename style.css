@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100&display=swap');
+* {
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif; /* Зміна шрифту */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #9b9191;
+    }
+
+#circl1 {
+    width: 13px;
+    height: 13px;
+    background-color: #ff5f57;
+    border-radius: 10px;
+    left: 1%;
+    top: 0.5%;
+    position: absolute;
+
+}
+
+#circl2 {
+    width: 13px;
+    height: 13px;
+    background-color: #febc2e;
+    border-radius: 10px;
+    left: 2%;
+    top: 0.5%;
+    margin-left: 20px;
+    position: absolute;
+
+}
+
+#circl3 {
+    width: 13px;
+    height: 13px;
+    background-color: #28c840;
+    border-radius: 10px;
+    left: 11%;
+    top: 0.5%;
+    margin-left: 20px;
+    position: absolute;
+}
+
+#calculator {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+    width: 240px;
+    color: #ffffff;
+}
+
+#cal-display {
+    background-color: #54535a;
+    line-height: 1.2em;
+    font-size: 2.5em;
+    text-align: right;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  
+}
+
+#cal-keypad,
+.functional-keys,
+.number-keys {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.functional-keys{
+    background-color: #616066;
+
+}
+
+#cal-keypad {
+    height: 250px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 1px solid #262626;
+    overflow: hidden;
+}
+
+#cal-keypad button {
+    padding: 0;
+    font-size: 1.5em;
+    width: 60px;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    background: none;
+    border: none;
+    font-family: inherit;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#cal-keypad .input-keys {
+    width: 240px;
+    background-color: #717171;
+}
+
+#cal-keypad .input-keys button {
+    border-top: 1px solid #262626;
+    border-left: 1px solid #262626;
+}
+
+#cal-keypad .input-keys button:active {
+    background-color: #838383;
+}
+
+#cal-keypad .number-keys {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+#cal-keypad .number-keys .key-0 {
+    width: 120px;
+    border-bottom-left-radius: 10px;
+}
+
+#cal-keypad .number-keys .key-coma {
+    padding-bottom: 5px;
+}
+
+#cal-keypad .operator {
+    background-color: #fe9807;
+}
+
+#cal-keypad .operator button {
+    border: 1px solid #262626;
+}
+
+#cal-keypad .operator button:not(:last-child) {
+    border: 1px solid #262626;
+    border-bottom: 0;
+}
+
+#cal-keypad .operator button span {
+    display: block;
+    height: 50px;
+    line-height: 48px;
+}
+
+#cal-keypad .operator button.active > span {
+    border: 1px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+#cal-keypad .operator .key-equal {
+    border-bottom-right-radius: 5px;
+}
