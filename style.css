@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+body{
+    background-color: #DCDCDC;
+    font-family: 'Montserrat', serif;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    position: absolute;
+
+}
+a{
+    text-decoration: none;
+    color:  black;
+}
+t{
+    list-style: none;
+}
+t a{
+    padding: 10px;
+    border-radius: 10px;
+}
+.mes {
+    position: sticky;
+
+}
+d1{
+
+    font-size: 25px;
+    font-family: 'Montserrat', serif;
+}
+h1{
+    margin: 10px 0;
+    font-size: 30px;
+}
+h2{
+    margin: 10px 0;
+    font-size: 25px;
+}
+p{
+    font-size: 16.8px;
+    margin-top: 25px;
+    line-height: 1.5em;
+}
+.body{
+    width: 1100px;
+    height: 900px;
+    background-color:#ffffff;
+    border-radius: 20px 20px 0 0 ;
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas: 
+    'left right';
+}
+.sidebar{
+    width:300px;
+    background-color: #f4f7f9;
+    border-radius: 20px 20px 0 0 ;
+    text-align: center;
+}
+.page{
+    margin:0 20px 0 40px;
+}
+.inf{
+    display: grid;
+ 
+}
+.align{
+    text-align: left;
+    margin: 10px  20%;
+}
+.dow{
+    background-color: #2941ff;
+    color: white;
+    padding: 20px 0;
+    border-radius: 20px;
+    text-align: center;
+    margin: 30px 35px;
+    cursor: pointer;
+}
+.about{
+    background-color: #2941ff;
+    color: white;
+}
+nav{
+    display: flex;
+    margin: 20px 0px;
+    justify-content:flex-end;
+}
+nav li{
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.line{
+  margin-left: 10px;
+  width: 50px;
+  background: rgb(255,150,94);
+  background: linear-gradient(90deg, rgba(255,150,94,1) 27%, rgba(48,76,253,1) 27%); 
+  height: 5px;
+  border-radius: 10px;
+}
+.do{
+    display: grid;
+    grid-template-areas: 
+    '1 2'
+    '3 4 ';
+}
+.four{
+    text-align: center;
+    margin: 30px 0 0 0  ;
+    width: 355px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #c9c8c8;
+}
+.grey{
+    background-color: rgb(226, 226, 226);
+    padding: 10px;
+    border-radius: 20px;
+
+}
